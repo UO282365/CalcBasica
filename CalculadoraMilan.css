@@ -1,0 +1,85 @@
+
+/**
+    Especifidad (0,0,1)
+**/
+body{
+    color: rgb(52, 4, 65);
+    background-color: azure;
+
+}
+/**
+    Especifidad (0,0,1)
+**/
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/**
+    Especifidad (0,0,1)
+**/
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/**
+    Especifidad (0,0,1)
+**/
+form{
+    display: grid;
+    height: 20rem;
+    width: 20rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    color:black;
+    background-color: #f352f3;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[type=text]{
+    grid-column: 1 / span 5;
+    text-align: end;
+    font-size: 2.5em;
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[name="suma"]{
+    grid-row: span 2;
+}
+/**
+    Especifidad (0,1,1)
+**/
+input[name = "ON/C"],
+input[name = "CE"],
+input[name = "cambiar signo"],
+input[name = "raíz"],
+input[name = "porcentaje"],
+input[name = "multiplicación"],
+input[name = "división"],
+input[name = "suma"],
+input[name = "resta"],
+input[name = "Mrc"],
+input[name = "M-"],
+input[name = "M+"]
+{
+    background-color: #15e7b6;
+    border-radius: 32px;
+}
+
+
+
+/**
+    Especifidad (0,0,1)
+**/
+input[type=button]{
+    margin: 5px;
+    padding: 0;
+    font-size: 1.5em;
+    border: none;
+}

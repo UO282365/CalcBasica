@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora</title>
+    <meta name="author" content="Adrián Vega" />
+    <meta name="description" content="Calculadora ej 3 practica ECMAscript" />
+    <meta name="keywords" content="calculadora, milan, calcular, javascrip" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
+    <script src="CalculadoraMilan.js"></script>
+</head>
+
+<body onload="calculadora.iniciar();">
+    <h1>Calculadora Básica</h1>
+    <h2>Calculadora que simula el funcionamiento de la calculadora pocket sunset de milan</h2>
+    <section>
+        <h2>Calculadora:</h2>
+        <form name="calculadoraBasica">
+			<label for="texto">Pantalla:</label>
+            <input type="text" name="pantalla" id="texto" readonly>
+			
+            <input type="button" name="ON/C" value="ON/C" onclick="calculadora.on();">
+            <input type="button" name="CE" value="CE" onclick="calculadora.ce();">
+            <input type="button" name="cambiar signo" value="+/-" onclick="calculadora.cambiarSigno();">
+            <input type="button" name="raíz" value="√" onclick="calculadora.raiz();">
+            <input type="button" name="porcentaje" value="%" onclick="calculadora.porcentaje();">
+            <input type="button" name="siete" value="7" onclick="calculadora.digito(7)">
+            <input type="button" name="ocho" value="8" onclick="calculadora.digito(8)">
+            <input type="button" name="nueve" value="9" onclick="calculadora.digito(9)">
+            <input type="button" name="multiplicación" value="X" onclick="calculadora.operar('*');">
+            <input type="button" name="división" value="/" onclick="calculadora.operar('/');">
+            <input type="button" name="cuatro" value="4" onclick="calculadora.digito(4)">
+            <input type="button" name="cinco" value="5" onclick="calculadora.digito(5)">
+            <input type="button" name="seis" value="6" onclick="calculadora.digito(6)">
+            <input type="button" name="resta" value="-" onclick="calculadora.operar('-');">
+            <input type="button" name="Mrc" value="MRC" onclick="calculadora.mrc();">
+            <input type="button" name="uno" value="1" onclick="calculadora.digito(1)">
+            <input type="button" name="dos" value="2" onclick="calculadora.digito(2);">
+            <input type="button" name="tres" value="3" onclick="calculadora.digito(3)">
+            <input type="button" name="suma" value="+" onclick="calculadora.operar('+');">
+            <input type="button" name="M-" value="M-" onclick="calculadora.mmenos();">
+            <input type="button" name="cero" value="0" onclick="calculadora.digito(0)">
+            <input type="button" name="decimal" value="." onclick="calculadora.decimal();">
+            <input type="button" name="igual" value="=" onclick="calculadora.igual();">
+            <input type="button" name="M+" value="M+" onclick="calculadora.mmas();">
+        </form>
+    </section>
+
+</body>
+
+</html>
